@@ -27,5 +27,8 @@ describe('My Third Test Suite', function() {
         cy.get('#displayed-text').should('not.be.visible')
         cy.get('#show-textbox').click()
         cy.get('#displayed-text').should('be.visible')
+    
+        // Radio Button
+        cy.get('[value="radio2"]').check().should('be.checked')
     })
 })
