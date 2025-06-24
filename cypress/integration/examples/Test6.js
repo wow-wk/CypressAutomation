@@ -1,5 +1,3 @@
-/// <reference types='Cypress'/>
-
 describe('Handling Web Tables', function() {
     it('Should handle web tables', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')

@@ -1,5 +1,3 @@
-/// <reference types='Cypress'/>
-
 describe('My Third Test Suite', function() {
     it('My First Test Case', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')

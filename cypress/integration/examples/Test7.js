@@ -1,5 +1,3 @@
-/// <reference types='Cypress'/>
-
 describe('Handling Mouse Hover Event', function() {
     it('Should handle mouse hover', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')

@@ -1,5 +1,3 @@
-/// <reference types='Cypress'/>
-
 describe('Handling Child Windows', function() {
     it('Handling child windows with grab url', function () {
         // Rahulshetty Domain

@@ -1,5 +1,3 @@
-/// <reference types='Cypress'/>
-
 describe('Handling Child Windows', function() {
     it('Should handle child window', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
