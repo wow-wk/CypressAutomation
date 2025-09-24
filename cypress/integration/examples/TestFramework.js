@@ -1,3 +1,5 @@
+import HomePage from '../../support/pageObjects/HomePage'
+
 describe('End to End Ecommerce Test', function() {
     before(function() {
         // Runs once before all tests in this block
@@ -8,11 +10,10 @@ describe('End to End Ecommerce Test', function() {
 
     it('Submit Order', function() {
         let sum = 0
-
-        cy.visit('https://rahulshettyacademy.com/loginpagePractise/#')
-        cy.get('#username').type(this.data.username)
-        cy.get('#password').type(this.data.password)
-        cy.contains('Sign In').click()
+        const homepage = new HomePage()
+        
+        homepage.goTo('https://rahulshettyacademy.com/loginpagePractise/#')
+        homepage.login(this.data.username, this.data.password)
         cy.contains('Shop Name').should('be.visible')
         cy.get('app-card').should('have.length', 4)
 
