@@ -5,8 +5,8 @@ class ProductPage {
         cy.contains('Shop Name').should('be.visible')
     }
 
-    verifyCardLimit() {
-        cy.get('app-card').should('have.length', 4)
+    getCardCount() {
+        return cy.get('app-card')
     }
 
     selectFirstProduct() {
