@@ -10,8 +10,7 @@ describe('End to End Ecommerce Test', function() {
     })
 
     it('Submit Order', function() {
-
-        this.homepage.goTo('https://rahulshettyacademy.com/loginpagePractise/#')
+        this.homepage.goTo(`${Cypress.env('url')}/loginpagePractise/#`)
         const productPage = this.homepage.login(this.data.username, this.data.password)
         
         productPage.pageValidation()
